@@ -1,13 +1,19 @@
 import React, {useState} from 'react';
 
-const memberForm = (props)=> {
+const MemberForm = (props)=> {
     console.log("memberForm props: ", props);
     const [member, setMemeber] = useState({
         name: "",
         email: "",
         role: ""
 
-    })
+    });
+    const changeHandler = (e) => {
+        setMemeber({
+          
+        });
+      };
+      
     return (
         <form>
           <label htmlFor="body">Name</label>
@@ -25,4 +31,4 @@ const memberForm = (props)=> {
       );
 }
 
-export default memberForm;
+export default MemberForm;
